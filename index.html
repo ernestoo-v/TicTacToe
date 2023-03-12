@@ -6,44 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .fila {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            padding-bottom: 5px;
-        }
-
-        .casilla {
-            width: 200px;
-            height: 200px;
-            border: 1px solid black;
-            font-size: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p class="color forma altura nombre" id="parrafo">Estamos en LM en IMF</p>
-    <div class="container" id="contenedor">
-        <div class="fila">
-            <div class="casilla">O</div>
-            <div class="casilla"></div>
-            <div class="casilla">X</div>
+    <div class="div-main">
+        <div class="div-LeftRight">
+            <div class="div-puntuacion">
+                <div>Puntuacion X: </div>
+                <div class="contador" id="contadorX"></div>
+            </div>
+            <div class="div-temporizador">
+                <div> Tiempo X: </div>
+                <div class="temporizador" id="temporizadorX"></div>
+            </div>
+            <div class="div-mostrarTurno" id="div-mostrarTurnoX">
+                <div id="mostrarTurnoX">Turno X</div>
+            </div>
         </div>
-        <div class="fila">
-            <div class="casilla">O</div>
-            <div class="casilla"></div>
-            <div class="casilla">X</div>
+
+        <div class="div-tablero">
+            <div class="container" id="contenedor">
+                <div class="fila">
+                    <div class="casilla"></div>
+                    <div class="casilla"></div>
+                    <div class="casilla"></div>
+                </div>
+                <div class="fila">
+                    <div class="casilla"></div>
+                    <div class="casilla"></div>
+                    <div class="casilla"></div>
+                </div>
+                <div class="fila">
+                    <div class="casilla"></div>
+                    <div class="casilla"></div>
+                    <div class="casilla"></div>
+                </div>
+            </div>
         </div>
-        <div class="fila">
-            <div class="casilla">O</div>
-            <div class="casilla"></div>
-            <div class="casilla">X</div>
+
+
+        <div class="div-LeftRight">
+            <div class="div-puntuacion">
+                <div>Puntuacion O: </div>
+                <div class="contador" id="contadorO"></div>
+            </div>
+            <div class="div-temporizador">
+                <div> Tiempo O: </div>
+                <div class="temporizador" id="temporizadorO"></div>
+            </div>
+            <div class="div-mostrarTurno" id="div-mostrarTurnoO">
+                <div id="mostrarTurnoO">Turno O</div>
+            </div>
+            <div class="buttons">
+                <button id="button-reset">Jugar de nuevo</button>
+            </div>
         </div>
+
+
+
+
     </div>
 </body>
 <!-- <script src="app.js"></script>-->
-<script src="tictactoe.js"></script>
+<script src="app.js"></script>
 
 </html>
+
