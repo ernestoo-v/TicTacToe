@@ -90,9 +90,16 @@ function timerX() {
         alert("Se le acabó el tiempo a las X, gana las O ");
         contadorO.textContent = parseInt(contadorO.textContent) + 1;
 
+
         resetearTablero();
         stopTimerX();
-        intervalX = setInterval(timerX, 1000);
+        MOSTRARTURNO(turno)
+
+        turno = !turno;
+
+        // intervalO = setInterval(timerO, 1000);
+        //MOSTRARTURNO(turno);
+
     }
 }
 
@@ -113,10 +120,16 @@ function timerO() {
     if (tiempoO < 0) {
         alert("Se le acabó el tiempo a las O, gana las X");
         contadorX.textContent = parseInt(contadorX.textContent) + 1;
-
         resetearTablero();
         stopTimerO();
-        intervalO = setInterval(timerO, 1000);
+        MOSTRARTURNO(turno)
+
+        turno = !turno;
+
+
+        // intervalX = setInterval(timerX, 1000);
+        //MOSTRARTURNO(turno);
+
     }
 }
 
